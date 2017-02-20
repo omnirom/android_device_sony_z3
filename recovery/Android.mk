@@ -33,7 +33,6 @@ LOCAL_POST_INSTALL_CMD += \
     cp -u $(PRODUCT_OUT)/system/lib/libstdc++.so $(TARGET_RECOVERY_ROOT_OUT)/lib/libstdc++.so; \
     cp -u $(PRODUCT_OUT)/system/lib/libc.so $(TARGET_RECOVERY_ROOT_OUT)/lib/libc.so; \
     cp -u $(PRODUCT_OUT)/system/lib/hw/keystore.msm8974.so $(TARGET_RECOVERY_ROOT_OUT)/lib/hw/keystore.msm8974.so; \
-    cp -u $(PRODUCT_OUT)/system/lib/hw/keystore.default.so $(TARGET_RECOVERY_ROOT_OUT)/lib/hw/keystore.default.so; \
     cp -u $(PRODUCT_OUT)/system/lib/libcrypto.so $(TARGET_RECOVERY_ROOT_OUT)/lib/libcrypto.so; \
     cp -u $(PRODUCT_OUT)/system/lib/libm.so $(TARGET_RECOVERY_ROOT_OUT)/lib/libm.so; \
     cp -u $(PRODUCT_OUT)/system/lib/libpcre.so $(TARGET_RECOVERY_ROOT_OUT)/lib/libpcre.so; \
