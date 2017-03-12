@@ -12,4 +12,4 @@
 /TA	emmc	/dev/block/platform/msm_sdcc.1/by-name/TA	flags=display="!Trim Area!";backup=1
 /external_sd	ext4	/dev/block/mmcblk1p1	/dev/block/mmcblk1p1	flags=display="Micro SDcard";storage;removable
 /usb-otg	auto    /dev/block/sda1 	/dev/block/sda1 	flags=display="USB OTG";storage;wipeingui;removable
-/apps_log ext4 /dev/block/platform/msm_sdcc.1/by-name/apps_log flags=display="AppsLog";wipeingui
+/misc emmc /dev/block/platform/msm_sdcc.1/by-name/apps_log
