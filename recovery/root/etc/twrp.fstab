@@ -5,8 +5,8 @@
 #/system        f2fs    /dev/block/platform/msm_sdcc.1/by-name/system
 /cache          ext4    /dev/block/platform/msm_sdcc.1/by-name/cache
 #/cache         f2fs    /dev/block/platform/msm_sdcc.1/by-name/cache
-/data           ext4    /dev/block/platform/msm_sdcc.1/by-name/userdata     length=-16384
-#/data          f2fs    /dev/block/platform/msm_sdcc.1/by-name/userdata     length=-16384
+#/data           ext4    /dev/block/platform/msm_sdcc.1/by-name/userdata     length=-16384
+/data          f2fs    /dev/block/platform/msm_sdcc.1/by-name/userdata     length=-16384
 /boot           emmc    /dev/block/platform/msm_sdcc.1/by-name/boot
 /recovery       emmc    /dev/block/platform/msm_sdcc.1/by-name/FOTAKernel   flags=display="Recovery";backup=1
 /TA             emmc    /dev/block/platform/msm_sdcc.1/by-name/TA           flags=display="!Trim Area!";backup=1
