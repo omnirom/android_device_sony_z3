@@ -48,5 +48,6 @@ TARGET_RECOVERY_QCOM_RTC_FIX := true
 # TWRP Crypto
 TW_INCLUDE_CRYPTO := true
 TARGET_HW_DISK_ENCRYPTION := true
+TARGET_SWV8_DISK_ENCRYPTION := true
 #custom flag for shinano-devices
 TARGET_HW_KEYSTORE := true
