@@ -13,15 +13,27 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Inherit OMNI common Phone stuff.
+$(call inherit-product, device/sony/leo/leo.mk)
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from z3 device
-$(call inherit-product, device/sony/z3/z3.mk)
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH := 1080
+
+
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=D6603
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_FINGERPRINT=Sony/leo/leo:N/NPD56N/1000106:user/release-keys
+PRODUCT_BUILD_PROP_OVERRIDES += PRIVATE_BUILD_DESC="leo-user N NPD56N 1000106 release-keys"
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := full_z3
-PRODUCT_DEVICE := z3
+PRODUCT_NAME := omni_leo
+PRODUCT_DEVICE := leo
 PRODUCT_BRAND := Sony
 PRODUCT_MANUFACTURER := Sony
 PRODUCT_MODEL := Xperia Z3
+
+# Inherit from leo device
+$(call inherit-product, vendor/omni/config/gsm.mk)
+

@@ -15,11 +15,14 @@
 # Inherit shinano-common definitions
 $(call inherit-product, device/sony/shinano-common/shinano.mk)
 
+# Inherit the fusion-common definitions
+$(call inherit-product, device/sony/shinano-common/shinano_omni.mk)
+
 # Include non-opensource parts
-$(call inherit-product, vendor/sony/z3/z3-vendor.mk)
+$(call inherit-product, vendor/sony/shinano-leo-caf/leo-vendor.mk)
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += device/sony/z3/overlay
+DEVICE_PACKAGE_OVERLAYS += device/sony/leo/overlay
 
 # Hardware-specific permissions
 PRODUCT_COPY_FILES += \
@@ -37,9 +40,13 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
+#Power hal
+PRODUCT_PACKAGES += \
+    power.leo
+
 # Dalvik/HWUI
-$(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-dalvik-heap.mk)
-$(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-hwui-memory.mk)
+$(call inherit-product, frameworks/native/build/phone-xxxhdpi-3072-dalvik-heap.mk)
+$(call inherit-product, frameworks/native/build/phone-xxxhdpi-3072-hwui-memory.mk)
 
 # Audio configs
 PRODUCT_COPY_FILES += \

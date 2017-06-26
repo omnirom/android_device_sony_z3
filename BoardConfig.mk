@@ -15,7 +15,7 @@
 # inherit from the shinano-common definitions
 include device/sony/shinano-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/sony/z3
+DEVICE_PATH := device/sony/leo
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := D6602,D6603,D6643,D6653,z3,leo
@@ -23,7 +23,7 @@ TARGET_SPECIFIC_HEADER_PATH += $(DEVICE_PATH)/include
 BOARD_HARDWARE_CLASS += $(DEVICE_PATH)/cmhw
 
 # Kernel properties
-TARGET_KERNEL_CONFIG := lineageos_shinano_leo_defconfig
+TARGET_KERNEL_CONFIG := omni_shinano_leo_defconfig
 
 # Partition information
 BOARD_VOLD_MAX_PARTITIONS := 25
