@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # inherit from the shinano-common definitions
-include device/sony/shinano-common/BoardConfigCommon.mk
+include device/sony/shinano-common/BoardConfigCommonOmni.mk
 
 DEVICE_PATH := device/sony/leo
 

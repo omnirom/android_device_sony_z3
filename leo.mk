@@ -13,9 +13,6 @@
 # limitations under the License.
 
 # Inherit shinano-common definitions
-$(call inherit-product, device/sony/shinano-common/shinano.mk)
-
-# Inherit the fusion-common definitions
 $(call inherit-product, device/sony/shinano-common/shinano_omni.mk)
 
 # Include non-opensource parts
