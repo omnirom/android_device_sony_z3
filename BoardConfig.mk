@@ -40,6 +40,4 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 # DT2W
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/clearpad/wakeup_gesture"
 
-BOARD_CUSTOM_BOOTIMG_MK := device/sony/msm8974-common/boot/custombootimg.mk
 BOARD_KERNEL_SEPARATED_DT := true
-
