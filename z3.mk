@@ -37,10 +37,6 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
-# Dalvik/HWUI
-$(call inherit-product, frameworks/native/build/phone-xxxhdpi-3072-dalvik-heap.mk)
-$(call inherit-product, frameworks/native/build/phone-xxxhdpi-3072-hwui-memory.mk)
-
 # NFC
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
