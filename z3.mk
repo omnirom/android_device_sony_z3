@@ -16,7 +16,7 @@
 $(call inherit-product, device/sony/shinano-common/shinano_omni.mk)
 
 # Include non-opensource parts
-$(call inherit-product, vendor/sony/shinano-leo-caf/leo-vendor.mk)
+$(call inherit-product, vendor/sony/shinano-z3-caf/z3-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += device/sony/z3/overlay
