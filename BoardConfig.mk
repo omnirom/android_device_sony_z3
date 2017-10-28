@@ -20,9 +20,11 @@ include device/sony/z3/twrp.mk
 DEVICE_PATH := device/sony/z3
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := D6602,D6603,D6643,D6653,z3,leo
+TARGET_OTA_ASSERT_DEVICE := D6602,D6603,D6643,D6653,D6633,z3,leo,z3dual,leodual
 TARGET_SPECIFIC_HEADER_PATH += $(DEVICE_PATH)/include
 BOARD_HARDWARE_CLASS += $(DEVICE_PATH)/cmhw
+
+TARGET_RELEASETOOLS_EXTENSIONS := device/sony/z3/releasetools
 
 # Kernel properties
 TARGET_KERNEL_CONFIG := omni_shinano_leo_defconfig

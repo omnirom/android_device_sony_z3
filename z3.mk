@@ -37,6 +37,10 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
+# BLOBs init script
+PRODUCT_COPY_FILES += device/sony/z3/releasetools/initblobs:initblobs.sh
+PRODUCT_COPY_FILES += device/sony/z3/releasetools/build.prop.dual:build.prop.dual
+
 # Audio configs
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_policy.conf:system/etc/audio_policy.conf \
