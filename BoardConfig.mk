@@ -22,8 +22,6 @@ TARGET_OTA_ASSERT_DEVICE := D6602,D6603,D6643,D6653,D6633,z3,leo,z3dual,leodual
 TARGET_SPECIFIC_HEADER_PATH += $(DEVICE_PATH)/include
 BOARD_HARDWARE_CLASS += $(DEVICE_PATH)/cmhw
 
-TARGET_RELEASETOOLS_EXTENSIONS := device/sony/z3/releasetools
-
 # Kernel properties
 TARGET_KERNEL_CONFIG := omni_shinano_z3_defconfig
 
@@ -38,9 +36,6 @@ BOARD_HAVE_RADIO := true
 
 # SELinux
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
-
-# Device specific prop
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # DT2W
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/clearpad/wakeup_gesture"
