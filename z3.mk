@@ -43,9 +43,9 @@ PRODUCT_COPY_FILES += $(LOCAL_PATH)/releasetools/build.prop.dual:build.prop.dual
 
 # Audio configs
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/audio/audio_policy.conf:system/etc/audio_policy.conf \
-    $(LOCAL_PATH)/audio/mixer_paths.xml:system/etc/mixer_paths.xml \
-    $(LOCAL_PATH)/audio/mixer_paths_auxpcm.xml:system/etc/mixer_paths_auxpcm.xml
+    $(LOCAL_PATH)/audio/audio_policy.xml:system/vendor/etc/audio_policy.xml \
+    $(LOCAL_PATH)/audio/mixer_paths.xml:system/vendor/etc/mixer_paths.xml \
+    $(LOCAL_PATH)/audio/mixer_paths_auxpcm.xml:system/vendor/etc/mixer_paths_auxpcm.xml
 
 # NFC
 PRODUCT_COPY_FILES += \
@@ -58,7 +58,7 @@ PRODUCT_COPY_FILES += \
 
 # Thermal manager
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/thermanager.xml:system/etc/thermanager.xml
+    $(LOCAL_PATH)/configs/thermanager.xml:system/vendor/etc/thermanager.xml
 
 # Wifi
 PRODUCT_COPY_FILES += \
