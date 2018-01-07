@@ -2,7 +2,7 @@
 
 SRCPATH=/system/vendor/etc/firmware/
 DSTPATH=/system/etc/firmware/
-FULL=$(strings /dev/block/platform/msm_sdcc.1/by-name/TA | grep glte)
+FULL=$(strings /dev/block/platform/msm_sdcc.1/by-name/TA | grep "glte\|cmcc")
 CODENAME=$(echo $FULL | cut -d "_" -f 1)
 VARIANT=$(echo $FULL | cut -d "_" -f 2)
 
@@ -28,7 +28,7 @@ for set in adsp modem ; do
 
 done
 
-if [[ "$VARIANT" = "dsds" ]]
+if [[ "$VARIANT" = "dsds" ]] || [[ "$VARIANT" = "cmcc" ]]
 then
 	echo "Updateing build.prop"
 	sed -i 's/ro.telephony.default_network=.*/ro.telephony.default_network=9,1/g' /system/build.prop
