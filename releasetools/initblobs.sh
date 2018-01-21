@@ -2,7 +2,7 @@
 
 SRCPATH=/system/vendor/etc/firmware/
 DSTPATH=/system/etc/firmware/
-FULL=$(strings /dev/block/platform/msm_sdcc.1/by-name/TA | grep "glte\|cmcc")
+FULL=$(strings /dev/block/platform/msm_sdcc.1/by-name/TA | egrep "^leo" | head -1 )
 CODENAME=$(echo $FULL | cut -d "_" -f 1)
 VARIANT=$(echo $FULL | cut -d "_" -f 2)
 
