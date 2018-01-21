@@ -7,7 +7,17 @@ CODENAME=$(echo $FULL | cut -d "_" -f 1)
 VARIANT=$(echo $FULL | cut -d "_" -f 2)
 
 echo "full: $FULL"
+if [ -z "$VARIANT" ]
+then
+    echo "VARIANT not found! Falling back to default..."
+    VARIANT=leo
+fi
 echo "variant: $VARIANT"
+if [ -z "$CODENAME" ]
+then
+    echo "CODENAME not found! Falling back to default..."
+    CODENAME=ets
+fi
 echo "codename: $CODENAME"
 
 echo "Remounting system rw"
