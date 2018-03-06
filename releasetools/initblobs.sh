@@ -10,13 +10,13 @@ echo "full: $FULL"
 if [ -z "$VARIANT" ]
 then
     echo "VARIANT not found! Falling back to default..."
-    VARIANT=leo
+    VARIANT=ets
 fi
 echo "variant: $VARIANT"
 if [ -z "$CODENAME" ]
 then
     echo "CODENAME not found! Falling back to default..."
-    CODENAME=ets
+    CODENAME=leo
 fi
 echo "codename: $CODENAME"
 
