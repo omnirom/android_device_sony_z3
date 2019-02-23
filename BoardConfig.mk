@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # SELinux (must be specified before including common mk files)
-BOARD_USE_ENFORCING_SELINUX := true
+BOARD_USE_ENFORCING_SELINUX := false
 
 # inherit from the shinano-common definitions
 include device/sony/shinano-common/BoardConfigCommonOmni.mk
